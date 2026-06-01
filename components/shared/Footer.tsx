@@ -14,18 +14,21 @@ import {
   ArrowUpRight,
   Heart,
 } from 'lucide-react'
+import AventiaLogo from '@/components/shared/AventiaLogo'
+import { useLocale } from '@/hooks/use-locale'
+import { DIVISIONS } from '@/lib/constants'
 
-/** Brand logos removed in lucide-react v1 — stroke-matched local icons */
-function Linkedin({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
+// lucide-react v1 removed brand icons — stroke-matched local equivalents
+function Linkedin(props: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={strokeWidth}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
@@ -37,16 +40,16 @@ function Linkedin({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
   )
 }
 
-function Twitter({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
+function Twitter(props: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={strokeWidth}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
@@ -56,16 +59,16 @@ function Twitter({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
   )
 }
 
-function Instagram({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
+function Instagram(props: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={strokeWidth}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
@@ -77,16 +80,16 @@ function Instagram({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
   )
 }
 
-function Facebook({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
+function Facebook(props: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={strokeWidth}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
@@ -95,9 +98,6 @@ function Facebook({ size = 24, strokeWidth = 2, ...props }: LucideProps) {
     </svg>
   )
 }
-import AventiaLogo from '@/components/shared/AventiaLogo'
-import { useLocale } from '@/hooks/use-locale'
-import { DIVISIONS } from '@/lib/constants'
 
 // ─────────────────────────────────────────────────────────────
 // CONSTANTS
