@@ -56,9 +56,6 @@
   --drones-gradient: linear-gradient(135deg, #dc2626, #ef4444);
 
   /* ── Typography ───────────────────────────────────── */
-  --font-display: 'Exo 2', system-ui, sans-serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Font sizes */
   --text-hero: 72px;

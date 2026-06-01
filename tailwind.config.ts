@@ -87,12 +87,11 @@ const config: Config = {
       // TYPOGRAPHY
       // ─────────────────────────────────────────
       fontFamily: {
-        // Headlines and display text
-        display: ['"Exo 2"', 'system-ui', 'sans-serif'],
-        // Body text and UI labels
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
-        // Stats, numbers, code
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        // CSS variables injected by next/font/google via fontVariables in layout.tsx
+        // Literal font names are fallbacks if the variable is not yet resolved.
+        display: ['var(--font-display)', '"Exo 2"', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-sans)', '"DM Sans"', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', '"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       fontSize: {
         // Custom type scale matching design system
