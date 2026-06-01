@@ -5,8 +5,8 @@ export { default as AventiaLogo } from './AventiaLogo'
 export type { AventiaLogoProps } from './AventiaLogo'
 
 // ── Coming in Prompt 06 ───────────────────────────────────────
-// export { default as Navbar } from './Navbar'
-// export { default as Footer } from './Footer'
+export { default as Navbar } from './Navbar'
+export { default as Footer } from './Footer'
 
 // ── Coming in Prompt 08 ───────────────────────────────────────
 // export { default as Button } from './Button'
