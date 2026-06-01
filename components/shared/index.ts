@@ -13,7 +13,14 @@ export { Button, ButtonGroup, buttonVariants } from './Button'
 export type { ButtonProps, ButtonGroupProps } from './Button'
 
 // ── Coming in Prompt 09 ───────────────────────────────────────
-// export { default as Card } from './Card'
+export { Card, DivisionCard, FeatureCard, StatCard } from './Card'
+export type {
+  CardProps,
+  DivisionCardProps,
+  DivisionData,
+  FeatureCardProps,
+  StatCardProps,
+} from './Card'
 
 // ── Coming in Prompt 10 ───────────────────────────────────────
 // export { default as ComingSoon } from './ComingSoon'
