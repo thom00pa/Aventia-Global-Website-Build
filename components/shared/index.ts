@@ -9,7 +9,8 @@ export { default as Navbar } from './Navbar'
 export { default as Footer } from './Footer'
 
 // ── Coming in Prompt 08 ───────────────────────────────────────
-// export { default as Button } from './Button'
+export { Button, ButtonGroup, buttonVariants } from './Button'
+export type { ButtonProps, ButtonGroupProps } from './Button'
 
 // ── Coming in Prompt 09 ───────────────────────────────────────
 // export { default as Card } from './Card'
