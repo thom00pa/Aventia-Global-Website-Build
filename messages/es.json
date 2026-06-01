@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "energy": "Energía",
+    "connect": "Conectar",
+    "store": "Tienda",
+    "ai": "IA",
+    "drones": "Drones",
+    "contact": "Contacto",
+    "getStarted": "Comenzar"
+  },
+  "common": {
+    "learnMore": "Saber Más",
+    "getStarted": "Comenzar",
+    "joinWaitlist": "Unirse a la Lista",
+    "comingSoon": "Próximamente",
+    "liveNow": "En Vivo",
+    "requestQuote": "Solicitar Cotización",
+    "contactUs": "Contáctanos",
+    "backHome": "Volver al Inicio",
+    "viewAll": "Ver Todo",
+    "notifyMe": "Notificarme",
+    "loading": "Cargando...",
+    "error": "Algo salió mal. Por favor intenta de nuevo.",
+    "success": "¡Éxito!",
+    "en": "EN",
+    "es": "ES"
+  },
+  "hero": {
+    "main": {
+      "headline": "Una Empresa. Cinco Divisiones. Potencial Ilimitado.",
+      "subheadline": "Aventia Global ofrece ahorro de energía, internet rápido, tecnología premium, servicios de IA e innovación aérea — todo desde Texas.",
+      "cta1": "Explorar Nuestras Divisiones",
+      "cta2": "Sobre Aventia"
+    }
+  },
+  "footer": {
+    "tagline": "Construyendo Texas. Impulsando el Futuro.",
+    "copyright": "© 2025 Aventia Global LLC. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  }
+}

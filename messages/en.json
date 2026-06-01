@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "energy": "Energy",
+    "connect": "Connect",
+    "store": "Store",
+    "ai": "AI",
+    "drones": "Drones",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "joinWaitlist": "Join the Waitlist",
+    "comingSoon": "Coming Soon",
+    "liveNow": "Live Now",
+    "requestQuote": "Request a Quote",
+    "contactUs": "Contact Us",
+    "backHome": "Back to Home",
+    "viewAll": "View All",
+    "notifyMe": "Notify Me",
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "success": "Success!",
+    "en": "EN",
+    "es": "ES"
+  },
+  "hero": {
+    "main": {
+      "headline": "One Company. Five Divisions. Limitless Potential.",
+      "subheadline": "Aventia Global delivers energy savings, fast internet, premium tech, AI services, and aerial innovation — all from Texas.",
+      "cta1": "Explore Our Divisions",
+      "cta2": "About Aventia"
+    }
+  },
+  "footer": {
+    "tagline": "Building Texas. Powering the Future.",
+    "copyright": "© 2025 Aventia Global LLC. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
