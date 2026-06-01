@@ -23,4 +23,13 @@ export type {
 } from './Card'
 
 // ── Coming in Prompt 10 ───────────────────────────────────────
-// export { default as ComingSoon } from './ComingSoon'
+export { ComingSoon } from './ComingSoon'
+export type { ComingSoonProps } from './ComingSoon'
+
+// ── Prompt 11 ────────────────────────────────────────────────
+export { SectionWrapper, SectionItem, SectionHeading } from './SectionWrapper'
+export type {
+  SectionWrapperProps,
+  SectionItemProps,
+  SectionHeadingProps,
+} from './SectionWrapper'
