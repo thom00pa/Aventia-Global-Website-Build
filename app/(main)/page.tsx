@@ -1,7 +1,20 @@
-export default function MainPage() {
+// app/(main)/page.tsx
+import HeroSection      from '@/components/sections/HeroSection'
+import StatsBar         from '@/components/sections/StatsBar'
+import DivisionsGrid    from '@/components/sections/DivisionsGrid'
+import AboutSection     from '@/components/sections/AboutSection'
+import LanguagesStrip   from '@/components/sections/LanguagesStrip'
+import CtaBanner        from '@/components/sections/CtaBanner'
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-2xl font-bold">Aventia Global — Main (placeholder)</h1>
-    </main>
+    <>
+      <HeroSection />
+      <StatsBar />
+      <DivisionsGrid />
+      <AboutSection />
+      <LanguagesStrip />
+      <CtaBanner />
+    </>
   )
 }
