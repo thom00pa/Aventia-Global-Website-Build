@@ -135,6 +135,7 @@
     font-family: var(--font-sans);
     color: var(--text-primary);
     background-color: var(--bg-primary);
+    overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -146,6 +147,7 @@
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overflow-x: hidden;
     font-family: var(--font-sans);
     font-size: var(--text-body);
     line-height: var(--lh-body);
@@ -458,7 +460,7 @@
   /* ── Stat Numbers ───────────────────────────────────── */
   .stat-number {
     font-family: var(--font-mono);
-    font-size: var(--text-stat);
+    font-size: clamp(28px, 5.5vw, 48px);
     font-weight: 500;
     line-height: 1.1;
     background: var(--accent-gradient);
@@ -565,7 +567,7 @@
   /* ── Section Headlines ──────────────────────────────── */
   .section-headline {
     font-family: var(--font-display);
-    font-size: var(--text-section);
+    font-size: clamp(24px, 6vw, 48px);
     font-weight: 700;
     line-height: var(--lh-section);
     color: var(--text-primary);
@@ -574,7 +576,7 @@
 
   .hero-headline {
     font-family: var(--font-display);
-    font-size: var(--text-hero);
+    font-size: clamp(32px, 9vw, 72px);
     font-weight: 800;
     line-height: var(--lh-hero);
     color: var(--text-primary);
@@ -662,4 +664,55 @@
   /* Safe area padding for mobile (notch awareness) */
   .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
   .pt-safe { padding-top: env(safe-area-inset-top); }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MOBILE OVERRIDES (< 640px / sm breakpoint)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 639px) {
+
+  /* Reduce section vertical padding from 100px to 64px */
+  :root {
+    --section-padding-y: 64px;
+  }
+
+  /* Card headlines — Exo 2 24px is fine; only cap large cards */
+  .card-headline {
+    font-size: 20px;
+  }
+
+  /* Input fields — ensure 16px minimum to prevent iOS auto-zoom */
+  .input,
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='number'],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Buttons — ensure minimum tap target height of 44px */
+  .btn {
+    min-height: 44px;
+    padding-top:    12px;
+    padding-bottom: 12px;
+  }
+
+  /* Prevent any position:absolute blob from scrolling the page */
+  .hero-blob {
+    pointer-events: none;
+  }
+
+  /* Table-like grids that might overflow */
+  .grid {
+    overflow-x: visible;
+  }
+}
+
+/* Touch devices — larger tap targets for icon buttons */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    min-height: 44px;
+  }
 }

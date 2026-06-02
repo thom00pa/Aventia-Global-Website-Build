@@ -490,7 +490,10 @@ export default function EnrollmentForm() {
                     {locale === 'es' ? 'Selecciona tu Plan *' : 'Select Your Plan *'}
                   </p>
 
-                  <div className="grid grid-cols-3 gap-3">
+                  <div
+                    className="grid gap-3"
+                    style={{ gridTemplateColumns: 'repeat(3, minmax(100px, 1fr))', overflowX: 'auto', paddingBottom: '4px' }}
+                  >
                     {PLAN_OPTIONS.map((plan) => {
                       const isSelected = selectedPlan === plan.id
                       return (
@@ -531,7 +534,7 @@ export default function EnrollmentForm() {
 
                             <span
                               className="font-display font-bold block"
-                              style={{ fontSize: '14px', color: isSelected ? plan.color : 'var(--text-primary)' }}
+                              style={{ fontSize: '14px', color: isSelected ? plan.color : 'var(--text-primary)', whiteSpace: 'nowrap' }}
                             >
                               {locale === 'es' ? plan.nameEs : plan.nameEn}
                             </span>

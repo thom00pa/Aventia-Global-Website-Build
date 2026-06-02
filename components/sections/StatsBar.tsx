@@ -296,7 +296,7 @@ export default function StatsBar() {
           column count (grid-cols-2 on mobile, grid-cols-4 on md+).
         */}
         <div
-          className="grid grid-cols-2 md:grid-cols-4"
+          className="grid grid-cols-2 sm:grid-cols-4"
           style={{ borderLeft: '1px solid var(--border)' }}
         >
           {STATS.map((stat) => (
