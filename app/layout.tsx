@@ -6,50 +6,65 @@ import { fontVariables } from '@/lib/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aventiaglobal.com'),
   title: {
-    default: 'Aventia Global — Technology. Energy. Innovation.',
+    default: 'Aventia Global — Energy, Internet, AI & More | Texas',
     template: '%s | Aventia Global',
   },
   description:
-    'Aventia Global is a multi-division technology and services company based in Texas. We power homes with clean energy, connect businesses with managed WiFi, and build the future with AI and drones.',
+    'Aventia Global LLC is a Texas-based technology company with 5 divisions: ' +
+    'retail electricity (Aventia Energy), managed WiFi (Aventia Connect), tech ' +
+    'hardware (Aventia Store), AI data annotation (Aventia AI), and aerial drone ' +
+    'services (Aventia Drones). Bilingual — English and Spanish.',
   keywords: [
-    'Aventia Global',
-    'Texas electricity',
-    'managed WiFi',
-    'AI annotation',
-    'drone services',
-    'tech company Texas',
+    'Aventia Global', 'Aventia Energy', 'Texas electricity', 'retail electric provider',
+    'managed WiFi Texas', 'AI data annotation', 'drone services Texas',
+    'tech hardware', 'bilingual energy', 'electricity español',
   ],
-  authors: [{ name: 'Aventia Global LLC' }],
+  authors: [{ name: 'Aventia Global LLC', url: 'https://aventiaglobal.com' }],
   creator: 'Aventia Global LLC',
-  metadataBase: new URL('https://aventiaglobal.com'),
+  publisher: 'Aventia Global LLC',
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    alternateLocale: 'es_MX',
-    url: 'https://aventiaglobal.com',
-    siteName: 'Aventia Global',
-    title: 'Aventia Global — Technology. Energy. Innovation.',
-    description:
-      'A multi-division technology company powering Texas homes, businesses, and beyond.',
+    type:            'website',
+    siteName:        'Aventia Global',
+    locale:          'en_US',
+    alternateLocale: ['es_MX'],
     images: [
       {
-        url: '/og-image.png',
-        width: 1200,
+        url:    '/api/og?title=Aventia+Global&tagline=Energy%2C+Internet%2C+AI+%26+More&color=%232563EB',
+        width:  1200,
         height: 630,
-        alt: 'Aventia Global',
+        alt:    'Aventia Global LLC — Technology & Services Company',
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Aventia Global',
-    description: 'Technology. Energy. Innovation.',
-    images: ['/og-image.png'],
+    card:        'summary_large_image',
+    site:        '@AventiaGlobal',
+    creator:     '@AventiaGlobal',
+    images: ['/api/og?title=Aventia+Global&tagline=Energy%2C+Internet%2C+AI+%26+More&color=%232563EB'],
   },
   robots: {
-    index: true,
-    follow: true,
+    index:          true,
+    follow:         true,
+    googleBot: {
+      index:              true,
+      follow:             true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet':       -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://aventiaglobal.com',
+    languages: {
+      'en-US': 'https://aventiaglobal.com',
+      'es-MX': 'https://aventiaglobal.com',
+    },
+  },
+  verification: {
+    // Add Google Search Console verification key here when available:
+    // google: 'YOUR_VERIFICATION_CODE',
   },
 }
 
