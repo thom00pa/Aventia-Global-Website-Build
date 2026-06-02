@@ -172,8 +172,8 @@ const FOOTER_COLUMNS: FooterColumn[] = [
     headingEn: 'Legal',
     headingEs: 'Legal',
     links: [
-      { labelEn: 'Privacy Policy',   labelEs: 'Política de Privacidad', href: '/privacy'      },
-      { labelEn: 'Terms of Service', labelEs: 'Términos de Servicio',   href: '/terms'        },
+      { labelEn: 'Privacy Policy',   labelEs: 'Política de Privacidad', href: 'https://aventiaglobal.com/privacy', external: true },
+      { labelEn: 'Terms of Service', labelEs: 'Términos de Servicio',   href: 'https://aventiaglobal.com/terms', external: true },
       { labelEn: 'Cookie Policy',    labelEs: 'Política de Cookies',    href: '/cookies'      },
       { labelEn: 'Disclosures',      labelEs: 'Divulgaciones',          href: '/disclosures'  },
     ],
