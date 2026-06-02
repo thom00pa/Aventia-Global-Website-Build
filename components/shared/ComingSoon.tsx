@@ -44,6 +44,8 @@ export interface ComingSoonProps {
   /** Optional launch quarter label e.g. "Q3 2026" shown when launchDate is null */
   launchLabel?: string
   launchLabelEs?: string
+  /** Optional HTML id for anchor navigation e.g. #waitlist */
+  id?: string
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -328,6 +330,7 @@ export function ComingSoon({
   locale = 'en',
   launchLabel,
   launchLabelEs,
+  id,
 }: ComingSoonProps) {
   const timeLeft = useCountdown(launchDate ?? null)
   const displayName      = locale === 'es' && nameEs    ? nameEs    : name
@@ -337,6 +340,7 @@ export function ComingSoon({
 
   return (
     <div
+      id={id}
       className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
       style={{
         backgroundColor: 'var(--bg-primary)',
